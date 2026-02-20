@@ -67,7 +67,7 @@
     <footer class="footer">
         <h3>Profesyonel Çözümler İçin</h3>
         <p>Üretim hatlarınızdaki verimlilik açıklarını birlikte kapatalım.</p>
-        <a href="mailto:info@bahtiyarayhan.com" class="contact-btn">Bana E-posta Gönder</a>
+        <a href="mailto:bbudumlu@hotmail.com" class="contact-btn">Bana E-posta Gönder</a>
         <p style="margin-top: 30px; opacity: 0.6; font-size: 0.9rem;">&copy; 2026 Bahtiyar Ayhan. Tüm Hakları Saklıdır.</p>
     </footer>
 </body>
