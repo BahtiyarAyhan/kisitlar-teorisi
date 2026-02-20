@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kısıtlar Teorisi | Sanayide Şeffaf Yönetim</title>
+    <style>
+        :root {
+            --primary: #2c3e50; /* Sanayi Mavisi */
+            --accent: #e67e22;  /* Fırın Ateşi Turuncusu */
+            --glass: rgba(255, 255, 255, 0.2);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: var(--primary);
+        }
+        nav {
+            background: var(--primary);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 0; }
+        .hero p { font-size: 1.5rem; font-weight: 300; font-style: italic; }
+        
+        .section { padding: 50px 10%; }
+        
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .step-card {
+            background: white;
+            padding: 30px;
+            border-bottom: 4px solid var(--accent);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+        .step-card:hover { transform: translateY(-5px); }
+        .step-num {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #eee;
+            margin-bottom: -20px;
+        }
+        .footer {
+            background: var(--primary);
+            color: #bdc3c7;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div style="font-weight: bold; font-size: 1.2rem;">KISITLAR TEORİSİ</div>
+    <div>Verimlilik • Şeffaflık • Akış</div>
+</nav>
+
+<div class="hero">
+    <h1>kisitlarteorisi.com</h1>
+    <p>"Sanayi yönetimi, cam kadar şeffaflık ister."</p>
+</div>
+
+<div class="section">
+    <h2 style="text-align: center; margin-bottom: 40px;">Üretimin 5 Altın Adımı</h2>
+    <div class="toc-grid">
+        <div class="step-card">
+            <div class="step-num">01</div>
+            <h3>Tespit Et</h3>
+            <p>Fabrikadaki darboğazı (kısıtı) bul. Temper fırını mı yoksa sevkiyat mı?</p>
+        </div>
+        <div class="step-card">
+            <div class="step-num02">02</div>
+            <h3>Sömür</h3>
+            <p>Kısıtı asla boş bırakma. Arıza ve hazırlık sürelerini minimize et.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-num">03</div>
+            <h3>Tabi Et</h3>
+            <p>Tüm fabrikayı kısıtın hızına göre ayarla. Gereksiz stok yapma.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-num">04</div>
+            <h3>Yükselt</h3>
+            <p>Kısıtın kapasitesini artıracak yatırımları (yeni makine vb.) devreye al.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    © 2026 kisitlarteorisi.com | Sanayide Şeffaf ve Verimli Yönetim Rehberi
+</div>
+
+</body>
+</html>
