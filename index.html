@@ -3,39 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kısıtlar Teorisi | Bahtiyar Ayhan</title>
+    <title>Bahtiyar Ayhan | Stratejik Yönetim & Verimlilik</title>
     <style>
-        :root { --primary: #2c3e50; --accent: #e67e22; --white: #ffffff; }
-        body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; color: var(--primary); margin: 0; line-height: 1.6; }
-        .hero { background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; color: var(--white); padding: 5rem 1rem; text-align: center; }
-        .container { padding: 2rem; max-width: 900px; margin: auto; }
-        .card { background: var(--white); padding: 1.8rem; margin: 1.5rem 0; border-left: 10px solid var(--accent); border-radius: 12px; box-shadow: 0 6px 25px rgba(0,0,0,0.07); }
-        .btn-group { margin-top: 20px; }
+        :root { --primary: #2c3e50; --accent: #e67e22; --white: #ffffff; --light: #ecf0f1; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f4f7f6; color: var(--primary); margin: 0; line-height: 1.6; }
+        .hero { background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1553028675-19bd211583b7?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; color: var(--white); padding: 4rem 1rem; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin: 0; letter-spacing: 2px; }
+        .container { padding: 2rem; max-width: 950px; margin: auto; }
+        
+        /* Yeni Vizyon Bölümü */
+        .vision-section { background: var(--white); padding: 2.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 3rem; border-top: 5px solid var(--primary); }
+        .vision-section h2 { color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; }
+        .vision-text { font-style: italic; color: #555; font-size: 1.1rem; border-left: 4px solid var(--accent); padding-left: 20px; margin: 20px 0; }
+        
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--white); padding: 1.5rem; border-left: 8px solid var(--accent); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .card h3 { margin-top: 0; color: var(--accent); }
+        
+        .footer { background: var(--primary); color: var(--white); padding: 3rem 1rem; text-align: center; margin-top: 4rem; }
         .contact-btn { display: inline-block; background: var(--accent); color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 10px; transition: 0.3s; }
         .phone-btn { background: #27ae60; }
-        .footer { background: var(--primary); color: var(--white); padding: 3rem 1rem; text-align: center; margin-top: 4rem; }
+        @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } }
     </style>
 </head>
 <body>
     <header class="hero">
         <h1>BAHTİYAR AYHAN</h1>
-        <p>Stratejik Üretim Yönetimi & Kısıtlar Teorisi Uzmanı</p>
+        <p>Stratejik Üretim Yönetimi & Operasyonel Mükemmellik Uzmanı</p>
     </header>
+
     <div class="container">
-        <h2>Üretimde Verimlilik İlkeleri</h2>
-        <div class="card"><h3>1. Darboğazı Tespit Et</h3><p>Hattın hızını belirleyen en kritik noktayı bulun.</p></div>
-        <div class="card"><h3>2. Kısıtı Sömür</h3><p>Kritik makineler asla boşta beklememeli.</p></div>
-        <div class="card"><h3>3. Hızı Ayarla</h3><p>Sistemi darboğazın temposuna göre senkronize edin.</p></div>
-        <div class="card"><h3>4. Kısıtı Güçlendir</h3><p>Kapasiteyi artırmak için yatırımı bu noktaya yapın.</p></div>
-        <div class="card"><h3>5. Döngüyü Tekrarla</h3><p>Sürekli iyileştirme ile yeni kısıtları arayın.</p></div>
+        <section class="vision-section">
+            <h2>Vizyon & Yönetim Felsefesi</h2>
+            <p class="vision-text">
+                "Fabrika Yönetimlerinde çok lokasyonlu şirketlerde Üretim, Planlama, İnsan Kaynakları, İdari İşler ve Satınalma departmanlarında verimlilik, sadece süreçleri değil; bakış açısını da dönüştürmekle başlar."
+            </p>
+            <p>Görev aldığım şirketlerde, tüm departman süreçlerinin iyileştirilmesi ve operasyonel mükemmellik hedefiyle aktif rol alıyorum. Entegre yönetim sistemleri ile verimliliği artırırken maliyetleri düşürerek şirketin rekabet gücünü ileriye taşıyorum.</p>
+            <p>Haftalık koordinasyon toplantılarıyla güçlendirdiğim iş birliğine dayalı yönetim anlayışım, ekip motivasyonunu ve uyumu artırıyor. Sürekli iyileştirmenin sadece bilgi birikimi değil, bir <strong>kültür ve felsefe değişikliği</strong> olduğuna inanıyorum.</p>
+        </section>
+
+        <h2 style="text-align: center;">Uygulama Metodolojisi</h2>
+        <div class="card-grid">
+            <div class="card"><h3>1. Darboğaz Analizi</h3><p>Sistemi yavaşlatan en zayıf halkayı bilimsel yöntemlerle tespit ediyoruz.</p></div>
+            <div class="card"><h3>2. Süreç Senkronizasyonu</h3><p>Tüm departmanları en verimli hızda birbiriyle uyumlu hale getiriyoruz.</p></div>
+            <div class="card"><h3>3. Kültürel Dönüşüm</h3><p>Verimliliği personelin bir yaşam biçimi haline getirmesini sağlıyoruz.</p></div>
+        </div>
     </div>
+
     <footer class="footer">
-        <h3>Doğrudan İletişim</h3>
+        <h3>Stratejik İş Birliği İçin</h3>
         <div class="btn-group">
             <a href="mailto:bbudumlu@hotmail.com" class="contact-btn">E-posta Gönder</a>
-            <a href="tel:+905427244122" class="contact-btn phone-btn">📞 0542 724 41 22</a>
+            <a href="tel:+905XXXXXXXXX" class="contact-btn phone-btn">📞 05XX XXX XX XX</a>
         </div>
-        <p style="margin-top: 15px; opacity: 0.8;">Hızlı çözüm için arayabilir veya mesaj bırakabilirsiniz.</p>
+        <p style="margin-top: 15px; opacity: 0.7;">&copy; 2026 Bahtiyar Ayhan. Tüm Hakları Saklıdır.</p>
     </footer>
 </body>
 </html>
