@@ -9,16 +9,18 @@
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f4f7f6; color: var(--primary); margin: 0; padding: 0; line-height: 1.6; }
         .hero { background: var(--primary); color: var(--white); padding: 3rem 1rem; text-align: center; }
         .container { padding: 2rem; max-width: 950px; margin: auto; }
+        
+        /* FELSEFE KUTUSU */
         .felsefe-box { background: var(--white); padding: 2.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2.5rem; border-top: 5px solid var(--accent); }
         .quote { font-style: italic; color: var(--accent); font-weight: bold; border-left: 5px solid var(--accent); padding-left: 15px; margin-bottom: 20px; font-size: 1.2rem; }
         .felsefe-text p { margin-bottom: 15px; text-align: justify; }
 
         /* FORM TASARIMI */
-        .form-box { background: #fff; padding: 25px; border-radius: 15px; border: 2px solid #2980b9; margin: 30px 0; }
+        .form-box { background: #fff; padding: 25px; border-radius: 15px; border: 2px solid #2980b9; margin: 30px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .form-box h3 { color: #2980b9; margin-top: 0; text-align: center; }
         .form-group { margin-bottom: 15px; }
         .form-group label { display: block; font-weight: bold; margin-bottom: 5px; }
-        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
         .submit-btn { background: #2980b9; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 1.3rem; transition: 0.3s; }
         .submit-btn:hover { background: #1a5276; }
 
@@ -26,9 +28,11 @@
         .card { background: var(--white); border-bottom: 4px solid #27ae60; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
         .award-section { background: #fffdf2; border: 2px solid var(--gold); padding: 25px; border-radius: 15px; text-align: center; margin: 25px 0; }
         .award-section img { max-width: 100%; border-radius: 10px; margin-top: 15px; }
+        
         .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 15px; margin-top: 2rem; }
         .cert-card { background: white; padding: 10px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
         .cert-card img { width: 100%; border-radius: 5px; }
+        
         .footer { background: var(--primary); color: var(--white); padding: 3rem 1rem; text-align: center; margin-top: 3rem; }
         .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 25px 0; }
         .contact-btn { display: inline-block; color: white; padding: 14px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; min-width: 140px; }
@@ -43,4 +47,76 @@
     <div class="container">
         <section class="felsefe-box">
             <div class="quote">
-                "Fabrika Yönetimlerinde çok lokasyonlu şirketlerde Üretim, Planlama, İnsan Kaynakları, İdari İşler,
+                "Fabrika Yönetimlerinde çok lokasyonlu şirketlerde Üretim, Planlama, İnsan Kaynakları, İdari İşler, Satinalma departmanlarında verimlilik, sadece süreçleri değil; bakış açısını da dönüştürmekle başlar." [cite: 39]
+            </div>
+            <div class="felsefe-text">
+                <p>Görev aldığım şirketlerde, tüm departman süreçlerinin iyileştirilmesi ve operasyonel mükemmellik hedefiyle aktif rol alıyorum. [cite: 42] Tüm departmanların entegre Yönetim sistemi ile verimliliği artırırken maliyetleri düşürerek şirketin rekabet gücünü ileriye taşıdım. [cite: 43]</p>
+                <p>Haftalık koordinasyon toplantılarıyla güçlendirdiğim, iş birliğine dayalı yönetim anlayışım, ekip motivasyonunu ve uyumu artırıyor. [cite: 44] Yönetim ve idari kadrolarla kurduğum yakın iş birliği sayesinde, yenilikçi ve uygulanabilir çözümlerle sürekli iyileştirmeye odaklanıyorum. [cite: 45]</p>
+                <p>Stratejik planlama, problem çözme ve takım ruhunu harmanlayan yaklaşımım; şirketlerin sürdürülebilir büyümesine ve sektörde lider konuma ulaşmasına katkı sağlamaya devam ediyor ve bunun sadece bilgi birikimi değil, kültür ve felsefe değişikliğinin de önemli olduğuna inanıyorum. [cite: 46]</p>
+            </div>
+        </section>
+
+        <div class="form-box">
+            <h3>📋 Hızlı Teşhis & Ön Tespit Formu</h3>
+            <div class="form-group">
+                <label>Gözlemlenen Sorun</label>
+                <select id="sorun">
+                    <option value="Stok ve Yığılma">Makine Aralarında Yığılma / Stok</option>
+                    <option value="Operatör Beklemesi">Operatörlerin Beklemesi</option>
+                    <option value="Aşırı Fire">Yüksek Oranda Fire / Çöp</option>
+                    <option value="Düzensizlik">Saha Düzensizliği (5S Eksikliği)</option>
+                    <option value="Diğer">Diğer Teknik Kısıtlar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Fabrika/Şirket Adı</label>
+                <input type="text" id="fabrika" placeholder="Gözlem yapılan yer">
+            </div>
+            <div class="form-group">
+                <label>Notlar</label>
+                <textarea id="notlar" rows="3"></textarea>
+            </div>
+            <button class="submit-btn" onclick="sendToBahtiyar()">GÖNDER</button>
+        </div>
+
+        <div class="grid">
+            <div class="card"><h3>🔥 %75 Fire Azaltma</h3><p>Verimlilik odaklı süreç yönetimi.</p></div> [cite: 55]
+            <div class="card"><h3>⚡ %25 Kapasite Artışı</h3><p>Yatırımsız üretim artışı.</p></div> [cite: 56]
+        </div>
+
+        <div class="award-section">
+            <h3>🏆 Ulusal Uygulama Ödülü</h3> [cite: 59]
+            <img src="Ödül.png" alt="Ödül"> [cite: 60]
+        </div>
+
+        <div class="cert-grid">
+            <div class="cert-card"><img src="sertifika1.png"><p>Six Sigma</p></div> [cite: 63]
+            <div class="cert-card"><img src="sertifika2.png"><p>Supply Chain</p></div> [cite: 64]
+            <div class="cert-card"><img src="sertifika3.png"><p>Cost Reduction</p></div> [cite: 65]
+            <div class="cert-card"><img src="sertifika4.png"><p>OpEx</p></div> [cite: 66]
+            <div class="cert-card"><img src="sertifika5.png"><p>Proje</p></div> [cite: 67]
+            <div class="cert-card"><img src="sertifika6.png"><p>Global</p></div> [cite: 68]
+            <div class="cert-card"><img src="sertifika7.png"><p>Business</p></div> [cite: 69]
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="btn-group">
+            <a href="tel:+905427244122" class="contact-btn" style="background:#2980b9">📞 Ara</a> [cite: 74]
+            <a href="https://wa.me/905427244122" class="contact-btn" style="background:#25D366">💬 WhatsApp</a> [cite: 75]
+            <a href="mailto:bbudumlu@hotmail.com" class="contact-btn" style="background:#e67e22">✉️ E-posta</a> [cite: 76]
+        </div>
+        <p>📊 Toplam Ziyaret: <img src="https://komarev.com/ghpvc/?username=BahtiyarAyhan&color=orange&style=flat-square&label=GİRİŞ" style="vertical-align:middle;"></p> [cite: 78]
+    </footer>
+
+    <script>
+        function sendToBahtiyar() {
+            const sorun = document.getElementById('sorun').value;
+            const fabrika = document.getElementById('fabrika').value;
+            const notlar = document.getElementById('notlar').value;
+            const text = `Merhaba Bahtiyar Usta, Sahadan Bildiriyorum:%0A%0A*Sorun:* ${sorun}%0A*Fabrika:* ${fabrika}%0A*Notlar:* ${notlar}`;
+            window.location.href = `https://wa.me/905427244122?text=${text}`;
+        }
+    </script>
+</body>
+</html>
