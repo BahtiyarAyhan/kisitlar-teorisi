@@ -5,23 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bahtiyar Ayhan | Stratejik Yönetim & Verimlilik</title>
     <style>
-        :root { --primary: #2c3e50; --accent: #e67e22; --white: #ffffff; --light: #ecf0f1; }
+        :root { --primary: #2c3e50; --accent: #e67e22; --white: #ffffff; --whatsapp: #25D366; }
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f4f7f6; color: var(--primary); margin: 0; line-height: 1.6; }
         .hero { background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1553028675-19bd211583b7?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; color: var(--white); padding: 4rem 1rem; text-align: center; }
         .hero h1 { font-size: 2.5rem; margin: 0; letter-spacing: 2px; }
         .container { padding: 2rem; max-width: 950px; margin: auto; }
-        
         .vision-section { background: var(--white); padding: 2.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 3rem; border-top: 5px solid var(--primary); }
-        .vision-section h2 { color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; }
         .vision-text { font-style: italic; color: #555; font-size: 1.1rem; border-left: 4px solid var(--accent); padding-left: 20px; margin: 20px 0; }
-        
         .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
         .card { background: var(--white); padding: 1.5rem; border-left: 8px solid var(--accent); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .card h3 { margin-top: 0; color: var(--accent); }
-        
         .footer { background: var(--primary); color: var(--white); padding: 3rem 1rem; text-align: center; margin-top: 4rem; }
-        .contact-btn { display: inline-block; background: var(--accent); color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 10px; transition: 0.3s; }
+        .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+        .contact-btn { display: inline-block; color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s; min-width: 200px; text-align: center; }
+        .email-btn { background: var(--accent); }
         .phone-btn { background: #27ae60; }
+        .whatsapp-btn { background: var(--whatsapp); }
         @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } }
     </style>
 </head>
@@ -50,12 +48,13 @@
     </div>
 
     <footer class="footer">
-        <h3>Stratejik İş Birliği İçin</h3>
+        <h3>İş Birliği İçin İletişime Geçin</h3>
         <div class="btn-group">
-            <a href="mailto:bbudumlu@hotmail.com" class="contact-btn">E-posta Gönder</a>
+            <a href="mailto:bbudumlu@hotmail.com" class="contact-btn email-btn">✉️ E-posta Gönder</a>
             <a href="tel:+905427244122" class="contact-btn phone-btn">📞 0542 724 41 22</a>
+            <a href="https://wa.me/905427244122" class="contact-btn whatsapp-btn">💬 WhatsApp Mesaj</a>
         </div>
-        <p style="margin-top: 15px; opacity: 0.7;">&copy; 2026 Bahtiyar Ayhan. Tüm Hakları Saklıdır.</p>
+        <p style="margin-top: 20px; opacity: 0.7;">&copy; 2026 Bahtiyar Ayhan. Tüm Hakları Saklıdır.</p>
     </footer>
 </body>
 </html>
