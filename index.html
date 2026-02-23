@@ -12,16 +12,21 @@
         .box { background: var(--white); padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2rem; border-top: 5px solid var(--accent); }
         .cta-section { background: linear-gradient(135deg, #2c3e50, #1a252f); color: white; padding: 30px; border-radius: 20px; text-align: center; margin: 30px 0; border: 3px solid var(--gold); }
         
-        /* FORM TASARIMI */
         .form-box { background: #fff; padding: 25px; border-radius: 15px; border: 2px solid #2980b9; margin: 30px 0; }
         .form-box h3 { color: #2980b9; margin-top: 0; text-align: center; }
         .form-group { margin-bottom: 15px; }
         .form-group label { display: block; font-weight: bold; margin-bottom: 5px; }
         .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
-        .submit-btn { background: #2980b9; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 1.1rem; }
+        
+        /* GÜNCELLENEN BUTON */
+        .submit-btn { background: #2980b9; color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 1.2rem; transition: 0.3s; }
+        .submit-btn:hover { background: #1a5276; }
         
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 25px 0; }
         .card { background: var(--white); border-bottom: 4px solid #27ae60; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 20px; }
+        .cert-card { background: white; padding: 8px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .cert-card img { width: 100%; border-radius: 4px; }
         .footer { background: var(--primary); color: var(--white); padding: 3rem 1rem; text-align: center; margin-top: 3rem; }
         .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 20px 0; }
         .contact-btn { display: inline-block; color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; }
@@ -38,11 +43,10 @@
             <p><strong>"Verimlilik, bakış açısını değiştirmekle başlar."</strong> Çok lokasyonlu şirketlerde Üretim, İK ve Satınalma süreçlerini entegre ederek kârlılığı artırıyorum.</p>
         </section>
 
-        <div class="form-box" id="teshis">
+        <div class="form-box">
             <h3>📋 Hızlı Teşhis & Ön Tespit Formu</h3>
-            <p style="font-size: 0.9rem; color: #666; text-align: center;">(OSGB Uzmanları ve Saha Yöneticileri İçin)</p>
             <div class="form-group">
-                <label>Gözlemlenen Sorun Nedir?</label>
+                <label>Gözlemlenen Sorun</label>
                 <select id="sorun">
                     <option value="Stok ve Yığılma">Makine Aralarında Yığılma / Stok</option>
                     <option value="Operatör Beklemesi">Operatörlerin Beklemesi</option>
@@ -52,45 +56,4 @@
                 </select>
             </div>
             <div class="form-group">
-                <label>Fabrika/Şirket Adı (Opsiyonel)</label>
-                <input type="text" id="fabrika" placeholder="Hangi fabrikada gözlemlediniz?">
-            </div>
-            <div class="form-group">
-                <label>Notlarınız</label>
-                <textarea id="notlar" rows="3" placeholder="Gözleminizi buraya kısaca yazın..."></textarea>
-            </div>
-            <button class="submit-btn" onclick="sendToBahtiyar()">BİLGİLERİ BAHTİYAR USTA'YA GÖNDER</button>
-        </div>
-
-        <div class="cta-section">
-            <h2>48 SAATTE DARBOĞAZ TEŞHİSİ</h2>
-            <p>İlk görüşme ve ön analiz ücretsizdir.</p>
-            <a href="https://wa.me/905427244122" class="contact-btn" style="background:var(--gold); color:#2c3e50;">📞 HEMEN RANDEVU AL</a>
-        </div>
-
-        <div class="grid">
-            <div class="card"><h3>🔥 %75 Fire Azaltma</h3><p>Maliyetleri minimize ediyoruz.</p></div>
-            <div class="card"><h3>⚡ %25 Kapasite Artışı</h3><p>Verimliliği maksimize ediyoruz.</p></div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="btn-group">
-            <a href="tel:+905427244122" class="contact-btn" style="background:#2980b9">📞 Ara</a>
-            <a href="https://wa.me/905427244122" class="contact-btn" style="background:var(--whatsapp)">💬 WhatsApp</a>
-        </div>
-        <p>📊 Toplam Ziyaret: <img src="https://komarev.com/ghpvc/?username=BahtiyarAyhan&color=orange&style=flat-square&label=GİRİŞ" style="vertical-align:middle;"></p>
-    </footer>
-
-    <script>
-        function sendToBahtiyar() {
-            const sorun = document.getElementById('sorun').value;
-            const fabrika = document.getElementById('fabrika').value;
-            const notlar = document.getElementById('notlar').value;
-            const tel = "905427244122";
-            const text = `Usta Merhaba, Sahadan Bildiriyorum:%0A%0A*Sorun:* ${sorun}%0A*Fabrika:* ${fabrika}%0A*Notlar:* ${notlar}`;
-            window.location.href = `https://wa.me/${tel}?text=${text}`;
-        }
-    </script>
-</body>
-</html>
+                <label>Fabrika/Şirket Adı</label>
