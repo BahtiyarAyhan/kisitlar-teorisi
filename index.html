@@ -10,96 +10,37 @@
         .hero { background: var(--primary); color: var(--white); padding: 3rem 1rem; text-align: center; }
         .container { padding: 2rem; max-width: 950px; margin: auto; }
         
-        /* ÖNEMLİ: YENİ AKSİYON KUTUSU */
         .cta-section { 
             background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%); 
-            color: white; 
-            padding: 40px; 
-            border-radius: 20px; 
-            text-align: center; 
-            margin: 40px 0; 
-            border: 3px solid var(--gold);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            color: white; padding: 40px; border-radius: 20px; text-align: center; margin: 40px 0; 
+            border: 3px solid var(--gold); box-shadow: 0 15px 35px rgba(0,0,0,0.2);
         }
-        .cta-section h2 { color: var(--gold); margin-top: 0; font-size: 1.8rem; }
-        .cta-section p { font-size: 1.2rem; margin-bottom: 25px; }
+        .cta-section h2 { color: var(--gold); margin-top: 0; }
         .cta-main-btn { 
-            display: inline-block; 
-            background: var(--gold); 
-            color: #2c3e50; 
-            padding: 18px 45px; 
-            text-decoration: none; 
-            border-radius: 50px; 
-            font-weight: 900; 
-            font-size: 1.3rem;
-            transition: 0.3s;
-            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+            display: inline-block; background: var(--gold); color: #2c3e50; padding: 18px 45px; 
+            text-decoration: none; border-radius: 50px; font-weight: 900; font-size: 1.2rem; transition: 0.3s;
         }
-        .cta-main-btn:hover { transform: scale(1.05); background: white; }
 
         .article-box { background: var(--white); padding: 2.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2.5rem; border-top: 5px solid var(--primary); }
         .quote { font-style: italic; color: var(--accent); font-weight: bold; border-left: 4px solid var(--accent); padding-left: 15px; margin-bottom: 20px; }
+        
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 25px 0; }
         .card { background: var(--white); border: 1px solid #eee; padding: 25px; border-radius: 15px; text-align: center; }
         .success-card { border-bottom: 4px solid #27ae60; background: #f9fffb; }
+
         .award-section { background: #fffdf2; border: 2px solid var(--gold); padding: 20px; border-radius: 15px; text-align: center; margin: 25px 0; }
         .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; margin: 2.5rem 0; }
         .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+        /* SERTİFİKALAR GERİ GELDİ */
+        .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-top: 2rem; }
+        .cert-card { background: white; padding: 10px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+        .cert-card img { width: 100%; border-radius: 5px; margin-bottom: 5px; }
+        .cert-card p { font-size: 0.85rem; font-weight: bold; margin: 0; }
+
         .footer { background: var(--primary); color: var(--white); padding: 3rem 1rem; text-align: center; }
-        .contact-btn { display: inline-block; color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 5px; }
+        .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin: 20px 0; }
+        .contact-btn { display: inline-block; color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; }
         .whatsapp-btn { background: var(--whatsapp); }
+        .email-btn { background: var(--accent); }
         .phone-btn { background: #2980b9; }
-    </style>
-</head>
-<body>
-    <header class="hero">
-        <h1>BAHTİYAR AYHAN</h1>
-        <p>Stratejik Üretim Yönetimi & Operasyonel Mükemmellik Uzmanı</p>
-    </header>
-
-    <div class="container">
-        <section class="article-box">
-            <h2>Yönetim Felsefesi</h2>
-            <p class="quote">"Verimlilik, sadece süreçleri değil; bakış açısını da dönüştürmekle başlar."</p>
-            <p>Çok lokasyonlu şirketlerde üretimden satın almaya kadar tüm süreçleri entegre ederek maliyetleri düşürüyor, sürdürülebilir büyüme sağlıyorum.</p>
-        </section>
-
-        <div class="cta-section">
-            <h2>HIZLI TEŞHİS & ÇÖZÜM</h2>
-            <p><strong>"Fabrikanızdaki darboğazı 48 saat içinde teşhis edelim. İlk görüşme ücretsizdir."</strong></p>
-            <a href="https://wa.me/905427244122" class="cta-main-btn">ŞİMDİ RANDEVU AL</a>
-        </div>
-
-        <h2 style="text-align: center;">📈 Somut Başarılar</h2>
-        <div class="grid">
-            <div class="card success-card">
-                <h3>🔥 %75 Fire Azaltma</h3>
-                <p>Üretim hattındaki fire oranını %8'den %2'ye indirerek yıllık milyonluk tasarruf sağladık.</p>
-            </div>
-            <div class="card success-card">
-                <h3>⚡ %25 Kapasite Artışı</h3>
-                <p>Ek yatırım yapmadan, sadece süreç optimizasyonu ile üretim hacmini artırdık.</p>
-            </div>
-        </div>
-
-        <div class="award-section">
-            <h3 style="color: var(--gold);">🏆 Ulusal Uygulama Ödülü</h3>
-            <img src="Ödül.png" alt="Ödül" style="max-width:100%; border-radius:10px;">
-        </div>
-        
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/L2gJFetTgEE" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="btn-group">
-            <a href="tel:+905427244122" class="contact-btn phone-btn">📞 Hemen Ara</a>
-            <a href="https://wa.me/905427244122" class="contact-btn whatsapp-btn">💬 WhatsApp'tan Yaz</a>
-        </div>
-        <div style="margin-top: 15px; font-size: 0.8rem;">
-            📊 Toplam Ziyaret: <img src="https://komarev.com/ghpvc/?username=BahtiyarAyhan&color=orange&label=GİRİŞ" style="vertical-align: middle;">
-        </div>
-    </footer>
-</body>
-</html>
