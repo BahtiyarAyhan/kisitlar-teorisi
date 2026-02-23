@@ -6,22 +6,24 @@
     <title>Bahtiyar Ayhan | Stratejik Yönetim & Verimlilik</title>
     <style>
         :root { --primary: #2c3e50; --accent: #e67e22; --white: #ffffff; --whatsapp: #25D366; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; color: var(--primary); margin: 0; line-height: 1.6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7f6; color: var(--primary); margin: 0; padding: 0; line-height: 1.6; }
         .hero { background: var(--primary); color: var(--white); padding: 3rem 1rem; text-align: center; }
         .container { padding: 2rem; max-width: 950px; margin: auto; }
         .article-box { background: var(--white); padding: 2.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2.5rem; border-top: 5px solid var(--primary); }
-        .quote { font-style: italic; color: var(--accent); font-weight: bold; border-left: 4px solid var(--accent); padding-left: 15px; margin: 20px 0; }
+        .article-box h2 { color: var(--primary); margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .article-box p { margin-bottom: 1.2rem; font-size: 1.1rem; text-align: justify; white-space: pre-line; }
+        .quote { font-style: italic; color: var(--accent); font-weight: bold; border-left: 4px solid var(--accent); padding-left: 15px; margin-bottom: 20px; }
         
-        /* Ödül Bölümü Stili */
-        .award-section { background: #fffdf2; border: 2px solid #f1c40f; padding: 20px; border-radius: 15px; text-align: center; margin-bottom: 30px; }
-        .award-img { max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 15px; }
+        .award-section { background: #fffdf2; border: 2px solid #f1c40f; padding: 20px; border-radius: 15px; text-align: center; margin: 25px 0; }
+        .award-img { max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         
-        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin: 2rem 0; }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin: 2.5rem 0; }
         .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
         
         .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 2rem; }
-        .cert-card { background: white; padding: 12px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; transition: 0.3s; }
+        .cert-card { background: white; padding: 12px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
         .cert-card img { width: 100%; border-radius: 5px; }
+        .cert-card p { font-size: 0.9rem; font-weight: bold; margin-top: 10px; }
 
         .footer { background: var(--primary); color: var(--white); padding: 3rem 1rem; text-align: center; margin-top: 3rem; }
         .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 25px; }
@@ -39,40 +41,10 @@
     <div class="container">
         <section class="article-box">
             <h2>Vizyon & Yönetim Felsefesi</h2>
-            <p>Fabrika Yönetimlerinde çok lokasyonlu şirketlerde Üretim, Planlama, İnsan Kaynakları, İdari İşler, Satınalma departmanlarında verimlilik, sadece süreçleri değil; bakış açısını da dönüştürmekle başlar.</p>
+            <p class="quote">"Fabrika Yönetimlerinde çok lokasyonlu şirketlerde Üretim , Planlama ,  İnsan Kaynakları , İdari İşler , Satinalma departmanların da  verimlilik, sadece süreçleri değil; bakış açısını da dönüştürmekle başlar."</p>
             
-            <div class="award-section">
-                <h3 style="color: #d4af37;">🏆 Ulusal Yöneylem Araştırması Ödülü</h3>
-                <img src="Ödül.png" alt="Bahtiyar Ayhan Başarı Ödülü" class="award-img">
-                <p><strong>"Düzcam İşleme Sektöründe Bütünleşik Gerçek Zamanlı Üretim Yönetim Sistemi"</strong> projesi ile kazanılan kişisel başarı ödülü.</p>
-            </div>
+            <p>Görev aldığım şirketlerde, tüm departman  süreceçlerinin iyileştirilmesi ve operasyonel mükemmeliyet hedefiyle aktif rol alıyorum.  
 
-            <p>Haftalık koordinasyon toplantılarıyla güçlendirdiğim, iş birliğine dayalı yönetim anlayışım, ekip motivasyonunu ve uyumu artırıyor. Stratejik planlama ve takım ruhunu harmanlayan yaklaşımım, şirketlerin sürdürülebilir büyümesine katkı sağlıyor.</p>
-        </section>
+Tüm departmanların entegre Yönetim sistemi ile  verimliliği artırırken maliyetleri düşürerek şirketin rekabet gücünü ileriye taşıdım.
 
-        <h3 style="text-align: center;">🎥 Saha Uygulamaları</h3>
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/L2gJFetTgEE" allowfullscreen></iframe>
-        </div>
-
-        <h3 style="text-align: center; margin-top: 50px;">📜 Uzmanlık Sertifikaları</h3>
-        <div class="cert-grid">
-            <div class="cert-card"><img src="sertifika1.png"><p>Six Sigma: Green Belt</p></div>
-            <div class="cert-card"><img src="sertifika2.png"><p>Supply Chain & Operations</p></div>
-            <div class="cert-card"><img src="sertifika3.png"><p>Cost Reduction Expert</p></div>
-            <div class="cert-card"><img src="sertifika4.png"><p>Operational Excellence</p></div>
-            <div class="cert-card"><img src="sertifika5.png"><p>Proje Yönetimi Esasları</p></div>
-            <div class="cert-card"><img src="sertifika6.png"><p>Uluslararası Projeler</p></div>
-            <div class="cert-card"><img src="sertifika7.png"><p>Understanding Business</p></div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <h3>Profesyonel İletişim</h3>
-        <div class="btn-group">
-            <a href="mailto:bbudumlu@hotmail.com" class="contact-btn email-btn">✉️ E-posta</a>
-            <a href="https://wa.me/905427244122" class="contact-btn whatsapp-btn">💬 WhatsApp</a>
-        </div>
-    </footer>
-</body>
-</html>
+Haftalık koordinasyon toplantılarıyla güçlendirdiğim, iş birliğine dayalı yönetim anlayışım, ekip
