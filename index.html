@@ -9,38 +9,42 @@
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f0f2f5; color: var(--text); margin: 0; padding: 0; line-height: 1.7; }
         
         /* BAŞLIK GÖRSELİ VE ÜNVAN */
-        .hero-banner { background: var(--primary); text-align: center; color: white; padding: 0 0 40px 0; }
-        .hero-image { width: 100%; max-height: 500px; object-fit: cover; display: block; margin-bottom: 20px; }
-        .hero-banner h1 { margin: 10px 0 5px 0; font-size: 2.5rem; letter-spacing: 2px; }
-        .hero-banner p.title { font-size: 1.4rem; color: #3498db; font-weight: bold; margin: 0; }
+        .hero-banner { background: var(--primary); text-align: center; color: white; padding: 0; position: relative; }
+        .hero-image { width: 100%; height: auto; max-height: 450px; object-fit: cover; display: block; filter: brightness(0.7); }
+        .hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; }
+        .hero-text h1 { margin: 0; font-size: 3rem; letter-spacing: 2px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        .hero-text p.title { font-size: 1.8rem; color: #3498db; font-weight: bold; margin-top: 10px; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
 
         .container { padding: 2rem; max-width: 1000px; margin: auto; }
 
-        /* GERİ GELEN FELSEFE METNİ */
-        .felsefe-box { background: var(--white); padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 30px; border-top: 6px solid var(--accent); }
+        /* FELSEFE METNİ */
+        .felsefe-box { background: var(--white); padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-top: -50px; position: relative; z-index: 10; border-top: 6px solid var(--accent); }
         .felsefe-box p { font-size: 1.1rem; text-align: justify; color: #34495e; }
         .highlight { color: #1a2a3a; font-weight: bold; font-style: italic; display: block; margin-bottom: 15px; font-size: 1.2rem; border-left: 4px solid var(--accent); padding-left: 15px; }
 
-        /* FABRİKA RÖNTGENİ TESTİ */
-        .quiz-box { background: #fff; padding: 35px; border-radius: 20px; border: 2px solid #3498db; margin: 30px 0; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
-        .quiz-box h2 { color: #2980b9; text-align: center; margin-bottom: 25px; }
-        .question-group { margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 10px; }
-        .question-group label { font-weight: bold; display: block; margin-bottom: 10px; }
+        /* FABRİKA RÖNTGENİ TESTİ (10 SORU) */
+        .quiz-box { background: #fff; padding: 35px; border-radius: 20px; border: 2px solid #3498db; margin: 40px 0; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        .quiz-box h2 { color: #2980b9; text-align: center; margin-bottom: 30px; font-size: 2rem; }
+        .question-group { margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 5px solid #3498db; }
+        .question-group label { font-weight: bold; display: block; margin-bottom: 10px; color: #2c3e50; }
         select, input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-size: 1rem; box-sizing: border-box; }
 
-        .result-btn { background: #27ae60; color: white; border: none; padding: 20px; width: 100%; border-radius: 12px; font-weight: bold; cursor: pointer; font-size: 1.4rem; transition: 0.3s; margin-top: 20px; }
-        .result-btn:hover { background: #219150; transform: scale(1.01); }
+        .result-btn { background: #27ae60; color: white; border: none; padding: 20px; width: 100%; border-radius: 12px; font-weight: bold; cursor: pointer; font-size: 1.5rem; transition: 0.3s; margin-top: 20px; box-shadow: 0 5px 15px rgba(39,174,96,0.3); }
+        .result-btn:hover { background: #219150; transform: translateY(-3px); }
 
-        .footer { background: var(--primary); color: white; padding: 40px 20px; text-align: center; }
-        .contact-btn { display: inline-block; color: white; padding: 15px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 10px; min-width: 150px; }
+        .footer { background: var(--primary); color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
+        .contact-btn { display: inline-block; color: white; padding: 15px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 10px; min-width: 150px; transition: 0.3s; }
+        .contact-btn:hover { opacity: 0.8; }
     </style>
 </head>
 <body>
 
     <header class="hero-banner">
-        <img src="baslik-gorseli.jpg" alt="Stratejik Yönetim" class="hero-image">
-        <h1>BAHTİYAR AYHAN</h1>
-        <p class="title">İşletme Doktoru</p>
+        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Stratejik Yönetim" class="hero-image">
+        <div class="hero-text">
+            <h1>BAHTİYAR AYHAN</h1>
+            <p class="title">İşletme Doktoru</p>
+        </div>
     </header>
 
     <div class="container">
@@ -55,29 +59,55 @@
         </section>
 
         <div class="quiz-box">
-            <h2>🔍 Fabrika Verimlilik Analizi</h2>
-            <div id="test-form">
-                <div class="question-group">
-                    <label>1. Üretim sahasında makine aralarında bekleyen yarı mamul/stok var mı?</label>
-                    <select id="q1">
-                        <option value="0">Ciddi yığılmalar var</option>
-                        <option value="5">Belli bölgelerde daralma oluyor</option>
-                        <option value="10">Hayır, akış sürekli ve dengeli</option>
-                    </select>
-                </div>
-                <div class="question-group">
-                    <label>2. Günlük fire ve hurda oranlarınız hedeflediğiniz seviyede mi?</label>
-                    <select id="q2">
-                        <option value="0">Hedefin çok üzerinde</option>
-                        <option value="5">Hedef sınırında</option>
-                        <option value="10">Kontrol altında</option>
-                    </div>
-                <div class="question-group">
-                    <label>Şirket / Fabrika Adı:</label>
-                    <input type="text" id="fabrikaAd" placeholder="Analiz raporu için isim yazınız">
-                </div>
-                <button class="result-btn" onclick="analizEt()">📊 ANALİZİ TAMAMLA & GÖNDER</button>
+            <h2>📊 Fabrika Verimlilik Analizi (Röntgen)</h2>
+            
+            <div class="question-group">
+                <label>1. Üretim sahasında makine aralarında bekleyen yarı mamul/stok var mı?</label>
+                <select id="q1"><option value="0">Yığılma var</option><option value="5">Bazen oluyor</option><option value="10">Akış dengeli</option></select>
             </div>
+            <div class="question-group">
+                <label>2. Günlük fire ve hurda oranlarınız maliyetleri nasıl etkiliyor?</label>
+                <select id="q2"><option value="0">Çok yüksek</option><option value="5">Sınırda</option><option value="10">Kontrol altında</option></select>
+            </div>
+            <div class="question-group">
+                <label>3. Planlanmamış makine arızaları üretimi ne sıklıkla durduruyor?</label>
+                <select id="q3"><option value="0">Her gün</option><option value="5">Haftalık</option><option value="10">Nadir / Planlı</option></select>
+            </div>
+            <div class="question-group">
+                <label>4. Personel devir hızınız (işten çıkışlar) ne durumda?</label>
+                <select id="q4"><option value="0">Çok yüksek</option><option value="5">Orta</option><option value="10">Düşük / Sadık</option></select>
+            </div>
+            <div class="question-group">
+                <label>5. Sahada 5S (Düzen ve Temizlik) disiplini uygulanıyor mu?</label>
+                <select id="q5"><option value="0">Hayır</option><option value="5">Kısmen</option><option value="10">Tam disiplin</option></select>
+            </div>
+            <div class="question-group">
+                <label>6. Sipariş teslim sürelerinde gecikme yaşanıyor mu?</label>
+                <select id="q6"><option value="0">Sürekli</option><option value="5">Bazen</option><option value="10">Zamanında teslim</option></select>
+            </div>
+            <div class="question-group">
+                <label>7. Enerji ve hammadde kayıpları takip ediliyor mu?</label>
+                <select id="q7"><option value="0">Hayır</option><option value="5">Manuel</option><option value="10">Anlık Takip</option></select>
+            </div>
+            <div class="question-group">
+                <label>8. Operatörlerin bekleme süreleri ölçülüyor mu?</label>
+                <select id="q8"><option value="0">Hayır</option><option value="5">Kısmen</option><option value="10">Dijital Takip</option></select>
+            </div>
+            <div class="question-group">
+                <label>9. Departmanlar arası iletişim ve koordinasyon nasıl?</label>
+                <select id="q9"><option value="0">Zayıf</option><option value="5">Orta</option><option value="10">Mükemmel</option></select>
+            </div>
+            <div class="question-group">
+                <label>10. İş güvenliği kültürü üretim hızıyla uyumlu mu?</label>
+                <select id="q10"><option value="0">Uyumsuz</option><option value="5">Orta</option><option value="10">Tam Uyum</option></select>
+            </div>
+
+            <div class="question-group" style="border-left-color: #e67e22;">
+                <label>Şirket / Fabrika Adı:</label>
+                <input type="text" id="fabrikaAd" placeholder="Analiz raporu için isim yazınız">
+            </div>
+
+            <button class="result-btn" onclick="analizEt()">📊 ANALİZİ TAMAMLA & GÖNDER</button>
         </div>
 
     </div>
@@ -88,16 +118,19 @@
             <a href="https://wa.me/905427244122" class="contact-btn" style="background:#25D366">💬 WhatsApp</a>
             <a href="mailto:bbudumlu@hotmail.com" class="contact-btn" style="background:#e67e22">✉️ E-posta</a>
         </div>
-        <p>© 2024 Bahtiyar Ayhan | Stratejik Çözüm Merkezi</p>
+        <p>© 2024 Bahtiyar Ayhan | İşletme Doktoru</p>
     </footer>
 
     <script>
         function analizEt() {
             let skor = 0;
-            // Puanlama mantığı burada devam eder
-            skor = parseInt(document.getElementById('q1').value) + parseInt(document.getElementById('q2').value);
+            for(let i=1; i<=10; i++) {
+                skor += parseInt(document.getElementById('q' + i).value);
+            }
             const fabrika = document.getElementById('fabrikaAd').value || "Belirtilmedi";
-            const mesaj = `📊 *FABRİKA ANALİZ RAPORU*%0A%0A*Şirket:* ${fabrika}%0A*Skor:* ${skor}%0A*Uzman:* Bahtiyar Ayhan (İşletme Doktoru)`;
+            const mesaj = `📊 *FABRİKA ANALİZ RAPORU*%0A%0A*Şirket:* ${fabrika}%0A*Skor:* ${skor}/100%0A*Analiz Eden:* Bahtiyar Ayhan (İşletme Doktoru)`;
+            
+            alert("Analiz tamamlandı. Puanınız: " + skor + "/100. Detaylar için WhatsApp'a yönlendiriliyorsunuz.");
             window.location.href = `https://wa.me/905427244122?text=${mesaj}`;
         }
     </script>
