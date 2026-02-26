@@ -5,50 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bahtiyar Ayhan | İşletme Doktoru</title>
     <style>
-        :root { --primary: #1a2a3a; --accent: #3498db; --white: #ffffff; --text: #2c3e50; }
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f0f2f5; color: var(--text); margin: 0; padding: 0; line-height: 1.7; }
+        :root { --primary: #0f172a; --accent: #3b82f6; --white: #ffffff; --text: #1e293b; }
+        body { font-family: 'Inter', 'Segoe UI', sans-serif; background: #f8fafc; color: var(--text); margin: 0; padding: 0; line-height: 1.6; }
         
-        /* BAŞLIK GÖRSELİ VE ÜNVAN */
-        .hero-banner { background: var(--primary); text-align: center; color: white; padding: 0; position: relative; }
-        .hero-image { width: 100%; height: auto; max-height: 450px; object-fit: cover; display: block; filter: brightness(0.7); }
-        .hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; }
-        .hero-text h1 { margin: 0; font-size: 3rem; letter-spacing: 2px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
-        .hero-text p.title { font-size: 1.8rem; color: #3498db; font-weight: bold; margin-top: 10px; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
+        /* MODERN BAŞLIK ALANI (Görsel Yükleme Derdi Yok) */
+        .hero-banner { 
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 86c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm66-3c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM37 17c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM61 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM81 54c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM45 40c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm40 40c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM15 6c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-12 51c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 25c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm80 0c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM10 39c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm80 0c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM10 65c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm80 0c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM10 78c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm80 0c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-40 1c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm0 10c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%233498db' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+            padding: 80px 20px; text-align: center; color: white; border-bottom: 6px solid var(--accent);
+        }
+        .hero-banner h1 { margin: 0; font-size: 3.5rem; letter-spacing: 3px; font-weight: 800; text-transform: uppercase; }
+        .hero-banner p.title { font-size: 2rem; color: var(--accent); margin-top: 10px; font-weight: 600; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
 
-        .container { padding: 2rem; max-width: 1000px; margin: auto; }
+        .container { padding: 20px; max-width: 1000px; margin: auto; }
 
         /* FELSEFE METNİ */
-        .felsefe-box { background: var(--white); padding: 35px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-top: -50px; position: relative; z-index: 10; border-top: 6px solid var(--accent); }
-        .felsefe-box p { font-size: 1.1rem; text-align: justify; color: #34495e; }
-        .highlight { color: #1a2a3a; font-weight: bold; font-style: italic; display: block; margin-bottom: 15px; font-size: 1.2rem; border-left: 4px solid var(--accent); padding-left: 15px; }
+        .felsefe-box { background: var(--white); padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-top: -60px; position: relative; border-left: 8px solid var(--accent); }
+        .highlight { color: var(--primary); font-weight: bold; font-style: italic; display: block; margin-bottom: 20px; font-size: 1.3rem; line-height: 1.4; }
+        .felsefe-box p { font-size: 1.15rem; text-align: justify; color: #475569; margin: 0; }
 
-        /* FABRİKA RÖNTGENİ TESTİ (10 SORU) */
-        .quiz-box { background: #fff; padding: 35px; border-radius: 20px; border: 2px solid #3498db; margin: 40px 0; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
-        .quiz-box h2 { color: #2980b9; text-align: center; margin-bottom: 30px; font-size: 2rem; }
-        .question-group { margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 10px; border-left: 5px solid #3498db; }
-        .question-group label { font-weight: bold; display: block; margin-bottom: 10px; color: #2c3e50; }
-        select, input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ddd; font-size: 1rem; box-sizing: border-box; }
+        /* ANALİZ TESTİ */
+        .quiz-box { background: #fff; padding: 40px; border-radius: 25px; border: 1px solid #e2e8f0; margin: 50px 0; box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+        .quiz-box h2 { color: var(--primary); text-align: center; margin-bottom: 35px; font-size: 2.2rem; }
+        .question-group { margin-bottom: 25px; padding: 20px; background: #f1f5f9; border-radius: 12px; transition: 0.3s; }
+        .question-group:hover { background: #e2e8f0; }
+        .question-group label { font-weight: 600; display: block; margin-bottom: 12px; color: #1e293b; font-size: 1.1rem; }
+        select, input { width: 100%; padding: 14px; border-radius: 10px; border: 1px solid #cbd5e1; font-size: 1rem; outline: none; transition: 0.3s; }
+        select:focus, input:focus { border-color: var(--accent); ring: 2px solid var(--accent); }
 
-        .result-btn { background: #27ae60; color: white; border: none; padding: 20px; width: 100%; border-radius: 12px; font-weight: bold; cursor: pointer; font-size: 1.5rem; transition: 0.3s; margin-top: 20px; box-shadow: 0 5px 15px rgba(39,174,96,0.3); }
-        .result-btn:hover { background: #219150; transform: translateY(-3px); }
+        .result-btn { background: #10b981; color: white; border: none; padding: 22px; width: 100%; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 1.5rem; transition: 0.3s; margin-top: 25px; text-transform: uppercase; letter-spacing: 1px; }
+        .result-btn:hover { background: #059669; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(16,185,129,0.3); }
 
-        .footer { background: var(--primary); color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
-        .contact-btn { display: inline-block; color: white; padding: 15px 25px; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 10px; min-width: 150px; transition: 0.3s; }
-        .contact-btn:hover { opacity: 0.8; }
+        .footer { background: var(--primary); color: white; padding: 60px 20px; text-align: center; margin-top: 60px; }
+        .contact-btn { display: inline-block; color: white; padding: 16px 30px; text-decoration: none; border-radius: 12px; font-weight: bold; margin: 10px; min-width: 160px; transition: 0.3s; }
+        .contact-btn:hover { filter: brightness(1.2); transform: scale(1.05); }
     </style>
 </head>
 <body>
 
     <header class="hero-banner">
-        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Stratejik Yönetim" class="hero-image">
-        <div class="hero-text">
-            <h1>BAHTİYAR AYHAN</h1>
-            <p class="title">İşletme Doktoru</p>
-        </div>
+        <h1>BAHTİYAR AYHAN</h1>
+        <p class="title">İşletme Doktoru</p>
     </header>
 
     <div class="container">
-        
         <section class="felsefe-box">
             <span class="highlight">"Fabrika Yönetimlerinde Üretim, Planlama, İnsan Kaynakları, İdari İşler ve Satınalma verimliliği; sadece süreçleri değil, bakış açısını da dönüştürmekle başlar."</span>
             <p>
@@ -59,64 +59,28 @@
         </section>
 
         <div class="quiz-box">
-            <h2>📊 Fabrika Verimlilik Analizi (Röntgen)</h2>
-            
-            <div class="question-group">
-                <label>1. Üretim sahasında makine aralarında bekleyen yarı mamul/stok var mı?</label>
-                <select id="q1"><option value="0">Yığılma var</option><option value="5">Bazen oluyor</option><option value="10">Akış dengeli</option></select>
-            </div>
-            <div class="question-group">
-                <label>2. Günlük fire ve hurda oranlarınız maliyetleri nasıl etkiliyor?</label>
-                <select id="q2"><option value="0">Çok yüksek</option><option value="5">Sınırda</option><option value="10">Kontrol altında</option></select>
-            </div>
-            <div class="question-group">
-                <label>3. Planlanmamış makine arızaları üretimi ne sıklıkla durduruyor?</label>
-                <select id="q3"><option value="0">Her gün</option><option value="5">Haftalık</option><option value="10">Nadir / Planlı</option></select>
-            </div>
-            <div class="question-group">
-                <label>4. Personel devir hızınız (işten çıkışlar) ne durumda?</label>
-                <select id="q4"><option value="0">Çok yüksek</option><option value="5">Orta</option><option value="10">Düşük / Sadık</option></select>
-            </div>
-            <div class="question-group">
-                <label>5. Sahada 5S (Düzen ve Temizlik) disiplini uygulanıyor mu?</label>
-                <select id="q5"><option value="0">Hayır</option><option value="5">Kısmen</option><option value="10">Tam disiplin</option></select>
-            </div>
-            <div class="question-group">
-                <label>6. Sipariş teslim sürelerinde gecikme yaşanıyor mu?</label>
-                <select id="q6"><option value="0">Sürekli</option><option value="5">Bazen</option><option value="10">Zamanında teslim</option></select>
-            </div>
-            <div class="question-group">
-                <label>7. Enerji ve hammadde kayıpları takip ediliyor mu?</label>
-                <select id="q7"><option value="0">Hayır</option><option value="5">Manuel</option><option value="10">Anlık Takip</option></select>
-            </div>
-            <div class="question-group">
-                <label>8. Operatörlerin bekleme süreleri ölçülüyor mu?</label>
-                <select id="q8"><option value="0">Hayır</option><option value="5">Kısmen</option><option value="10">Dijital Takip</option></select>
-            </div>
-            <div class="question-group">
-                <label>9. Departmanlar arası iletişim ve koordinasyon nasıl?</label>
-                <select id="q9"><option value="0">Zayıf</option><option value="5">Orta</option><option value="10">Mükemmel</option></select>
-            </div>
-            <div class="question-group">
-                <label>10. İş güvenliği kültürü üretim hızıyla uyumlu mu?</label>
-                <select id="q10"><option value="0">Uyumsuz</option><option value="5">Orta</option><option value="10">Tam Uyum</option></select>
-            </div>
+            <h2>🔍 Fabrika Röntgen Analizi (10 Soru)</h2>
+            <div class="question-group"><label>1. Üretim sahasında makine aralarında bekleyen yarı mamul/stok var mı?</label><select id="q1"><option value="0">Ciddi yığılma</option><option value="5">Bazen</option><option value="10">Akış dengeli</option></select></div>
+            <div class="question-group"><label>2. Günlük fire ve hurda oranlarınız maliyetleri nasıl etkiliyor?</label><select id="q2"><option value="0">Kârı eritiyor</option><option value="5">Dalgalı</option><option value="10">Kontrol altında</option></select></div>
+            <div class="question-group"><label>3. Planlanmamış makine arızaları üretimi ne sıklıkla durduruyor?</label><select id="q3"><option value="0">Sürekli</option><option value="5">Haftalık</option><option value="10">Planlı/Nadir</option></select></div>
+            <div class="question-group"><label>4. Personel devir hızınız (işten çıkışlar) ne durumda?</label><select id="q4"><option value="0">Çok yüksek</option><option value="5">Orta</option><option value="10">Düşük</option></select></div>
+            <div class="question-group"><label>5. Sahada 5S (Düzen ve Temizlik) disiplini uygulanıyor mu?</label><select id="q5"><option value="0">Hayır</option><option value="5">Kısmen</option><option value="10">Mükemmel</option></select></div>
+            <div class="question-group"><label>6. Sipariş teslim sürelerinde gecikme yaşanıyor mu?</label><select id="q6"><option value="0">Sürekli</option><option value="5">Bazen</option><option value="10">Zamanında</option></select></div>
+            <div class="question-group"><label>7. Enerji ve hammadde kayıpları takip ediliyor mu?</label><select id="q7"><option value="0">Hayır</option><option value="5">Manuel</option><option value="10">Dijital Takip</option></select></div>
+            <div class="question-group"><label>8. Operatörlerin bekleme süreleri (OEE) ölçülüyor mu?</label><select id="q8"><option value="0">Hayır</option><option value="5">Kısmen</option><option value="10">Tam Ölçüm</option></select></div>
+            <div class="question-group"><label>9. Departmanlar arası koordinasyon ve veri paylaşımı nasıl?</label><select id="q9"><option value="0">Kopuk</option><option value="5">Zayıf</option><option value="10">Entegre</option></select></div>
+            <div class="question-group"><label>10. İş güvenliği kültürü üretim hızıyla uyumlu mu?</label><select id="q10"><option value="0">Uyumsuz</option><option value="5">Orta</option><option value="10">Tam Uyum</option></select></div>
 
-            <div class="question-group" style="border-left-color: #e67e22;">
-                <label>Şirket / Fabrika Adı:</label>
-                <input type="text" id="fabrikaAd" placeholder="Analiz raporu için isim yazınız">
-            </div>
-
+            <div class="question-group" style="border-left: 8px solid #e67e22;"><label>Şirket / Fabrika Adı:</label><input type="text" id="fabrikaAd" placeholder="İsim yazınız"></div>
             <button class="result-btn" onclick="analizEt()">📊 ANALİZİ TAMAMLA & GÖNDER</button>
         </div>
-
     </div>
 
     <footer class="footer">
         <div class="btn-group">
-            <a href="tel:+905427244122" class="contact-btn" style="background:#2980b9">📞 Ara</a>
-            <a href="https://wa.me/905427244122" class="contact-btn" style="background:#25D366">💬 WhatsApp</a>
-            <a href="mailto:bbudumlu@hotmail.com" class="contact-btn" style="background:#e67e22">✉️ E-posta</a>
+            <a href="tel:+905427244122" class="contact-btn" style="background:#3b82f6">📞 Ara</a>
+            <a href="https://wa.me/905427244122" class="contact-btn" style="background:#10b981">💬 WhatsApp</a>
+            <a href="mailto:bbudumlu@hotmail.com" class="contact-btn" style="background:#f97316">✉️ E-posta</a>
         </div>
         <p>© 2024 Bahtiyar Ayhan | İşletme Doktoru</p>
     </footer>
@@ -124,13 +88,10 @@
     <script>
         function analizEt() {
             let skor = 0;
-            for(let i=1; i<=10; i++) {
-                skor += parseInt(document.getElementById('q' + i).value);
-            }
+            for(let i=1; i<=10; i++) { skor += parseInt(document.getElementById('q' + i).value); }
             const fabrika = document.getElementById('fabrikaAd').value || "Belirtilmedi";
             const mesaj = `📊 *FABRİKA ANALİZ RAPORU*%0A%0A*Şirket:* ${fabrika}%0A*Skor:* ${skor}/100%0A*Analiz Eden:* Bahtiyar Ayhan (İşletme Doktoru)`;
-            
-            alert("Analiz tamamlandı. Puanınız: " + skor + "/100. Detaylar için WhatsApp'a yönlendiriliyorsunuz.");
+            alert("Analiz bitti! Puanınız: " + skor + "/100. Sonuçlar Bahtiyar Ayhan'a yönlendiriliyor.");
             window.location.href = `https://wa.me/905427244122?text=${mesaj}`;
         }
     </script>
